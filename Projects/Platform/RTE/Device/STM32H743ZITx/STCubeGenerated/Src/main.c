@@ -98,7 +98,6 @@ static void MX_SPI6_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /**
   * Override default HAL_GetTick function
   */
@@ -117,6 +116,16 @@ uint32_t HAL_GetTick (void) {
     __NOP(); __NOP(); __NOP(); __NOP(); __NOP(); __NOP();
   }
   return ++ticks;
+}
+
+/**
+  * Override default HAL_InitTick function
+  */
+HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority) {
+  
+  UNUSED(TickPriority);
+
+  return HAL_OK;
 }
 /* USER CODE END 0 */
 

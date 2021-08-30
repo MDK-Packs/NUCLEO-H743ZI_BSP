@@ -7,6 +7,11 @@
   <repository type="git">https://github.com/MDK-Packs/NUCLEO-H743ZI_BSP.git</repository>
 
   <releases>
+    <release version="1.0.0-dev1">
+      Projects examples update:
+      - override default HAL_InitTick function
+      - Platform example: Correct board revision
+    </release>
     <release version="1.0.0-dev0">
       Initial development version.
     </release>
