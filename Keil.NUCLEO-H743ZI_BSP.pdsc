@@ -93,6 +93,7 @@
       <book category="setup"     name="https://www.st.com/resource/en/user_manual/um1727-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf" title="Getting started" public="true"/>
       <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2407-stm32h7-nucleo144-boards-mb1364-stmicroelectronics.pdf" title="User Manual" public="true"/>
       <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1364-h743zi-c01_schematic.pdf"     title="Schematics" public="true"/>
+      <book category="other"     name="Documents/README.md" title="Guide" public="true"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32H743ZITx"/> 
       <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32H743"/>
       <feature type="ODbg"      n="1"              name="On-board ST-LINK-V3E"/>
