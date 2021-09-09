@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32H743ZITx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32H7xx_DFP.2.7.0</PackID>
+          <PackID>Keil.STM32H7xx_DFP.2.8.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00020000) IRAM2(0x24000000,0x00080000) IROM(0x08000000,0x00100000) IROM2(0x08100000,0x00100000) XRAM(0x30000000,0x00048000) XRAM2(0x38000000,0x00010000) CPUTYPE("Cortex-M7") FPU3(DFPU) CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -210,8 +210,8 @@
             <Ra1Chk>0</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
-            <Im1Chk>1</Im1Chk>
-            <Im2Chk>0</Im2Chk>
+            <Im1Chk>0</Im1Chk>
+            <Im2Chk>1</Im2Chk>
             <OnChipMemories>
               <Ocm1>
                 <Type>0</Type>
@@ -571,13 +571,13 @@
         </targetInfos>
       </component>
       <component Cbundle="NUCLEO-H743ZI" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-H743ZI BSP">
-        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0-dev0"/>
+        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Capiversion="2.1.0" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Cvendor="Keil" Cversion="1.3.0" condition="STM32H7_SC CMSIS_Driver ETH">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
@@ -589,103 +589,103 @@
         </targetInfos>
       </component>
       <component Capiversion="2.1.0" Cclass="CMSIS Driver" Cgroup="SPI" Cvendor="Keil" Cversion="1.2.0" condition="STM32H7_SC CMSIS_Driver SPI">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Capiversion="2.1.0" Cclass="CMSIS Driver" Cgroup="USART" Cvendor="Keil" Cversion="1.3.0" condition="STM32H7_SC CMSIS_Driver USART">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant="NUCLEO-H743ZI" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-H743ZI VIO">
-        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0-dev0"/>
+        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL Common">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Cortex" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="ETH" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="EXTI" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="IRDA" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL DMA">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="PWR" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL GPIO">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="SPI" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL DMA">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Smartcard" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL DMA UART">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="UART" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL DMA">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="USART" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL DMA">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 CMSIS">
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
@@ -695,7 +695,7 @@
       <file attr="config" category="header" name="Drivers\Config\stm32h7xx_nucleo_conf.h" version="1.0.0">
         <instance index="0">RTE\Board_Support\STM32H743ZITx\stm32h7xx_nucleo_conf.h</instance>
         <component Cbundle="NUCLEO-H743ZI" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-H743ZI BSP"/>
-        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0-dev0"/>
+        <package name="NUCLEO-H743ZI_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-H743ZI_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
@@ -727,7 +727,7 @@
       <file attr="config" category="source" condition="STM32H743_ARMCC" name="Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\arm\startup_stm32h743xx.s" version="1.9.0">
         <instance index="0">RTE\Device\STM32H743ZITx\startup_stm32h743xx.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 CMSIS"/>
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
@@ -735,7 +735,7 @@
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c" version="1.9.0">
         <instance index="0">RTE\Device\STM32H743ZITx\system_stm32h7xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 CMSIS"/>
-        <package name="STM32H7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.1-dev11"/>
+        <package name="STM32H7xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.8.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-H743ZI"/>
         </targetInfos>
@@ -755,6 +755,9 @@
         <LayDesc>Platform is a simple CMSIS RTOS2 example skeleton</LayDesc>
         <LayCat>Platform</LayCat>
         <LayLic>Apache 2.0</LayLic>
+        <interfaces>
+          <consumes id="RTOS2"/>
+        </interfaces>
       </Layer>
       <Layer>
         <LayName>Board</LayName>
@@ -765,8 +768,8 @@
         <interfaces>
           <consumes id="RTOS2"/>
           <provides id="C_ETH" value="0"/>
-          <provides id="A_UART" value="9"/>
-          <provides id="A_SPI" value="6"/>
+          <provides id="A_UART" value="1"/>
+          <provides id="A_SPI" value="1"/>
           <provides id="A_IO9_I"/>
           <provides id="A_IO10_O"/>
           <provides id="C_VIO"/>
@@ -784,6 +787,9 @@
         <LayUrl>https://www2.keil.com/mdk5/cmsis/rtx</LayUrl>
         <LayCat>RTOS</LayCat>
         <LayLic>Apache 2.0</LayLic>
+        <interfaces>
+          <provides id="RTOS2"/>
+        </interfaces>
       </Layer>
     </Layers>
     <LayAssign>

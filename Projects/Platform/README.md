@@ -43,14 +43,14 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 
 | Clock                   | Setting
 |:------------------------|:----------------------------------------
-| HSI                     |  64 MHz
+| LSE                     |  32 kHz
 | HCLK                    | 400 MHz
 | FCLK                    | 400 MHz
 | APB1                    | 200 MHz
 | APB2                    | 200 MHz
-| To LPUART1              | 100 MHz
+| To USART1               | 100 MHz
 | To USART3               | 100 MHz
-| To SPI6                 | 100 MHz
+| To SPI1                 | 100 MHz
 
 ### GPIO Configuration and usage
 
@@ -67,11 +67,11 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 | PB13        | ETH_TXD1       | Alternate Function, Speed=Very High           | Ethernet LAN8742A pin TXD0
 | PD8         | USART3_TX      | Alternate Function, Speed=Very High           | ST-LINK Virtual COM port (VCP_TX)
 | PD9         | USART3_RX      | Alternate Function, Speed=Very High           | ST-LINK Virtual COM port (VCP_RX)
-| PB6         | LPUART1_TX     | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D1 (TX)
-| PB7         | LPUART1_RX     | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D0 (RX)
-| PA6         | SPI6_MISO      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D12 (MISO)
-| PB5         | SPI6_MOSI      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D11 (MOSI)
-| PA5         | SPI6_SCK       | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D13 (SCK)
+| PB6         | USART1_TX      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D1 (TX)
+| PB7         | USART1_RX      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D0 (RX)
+| PA6         | SPI1_MISO      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D12 (MISO)
+| PB5         | SPI1_MOSI      | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D11 (MOSI)
+| PA5         | SPI1_SCK       | Alternate Function, Speed=Very High           | Arduino UNO R3 pin D13 (SCK)
 | PD15        | ARDUINO_IO_D9  | Input mode                                    | Arduino UNO R3 pin D9
 | PD14        | ARDUINO_IO_D10 | Output Push Pull, Level=High, Speed=Very High | Arduino UNO R3 pin D10
 | PC13        | vioBUTTON0     | not configured via CubeMX                     | Button USER
@@ -91,20 +91,22 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 | Debug monitor                           | 0                | Generate IRQ handler
 | Pendable request for system service     | 0                | none
 | Time base: System tick timer            | 0                | none
-| SPI6 global interrupt                   | 8                | none
-| Ethernet global interrupt               | 8                | none
-| LPUART1 global interrupt                | 8                | none
+| DMA1 stream2 global interrupt           | 8                | Generate IRQ handler, Call HAL handler
+| DMA1 stream3 global interrupt           | 8                | Generate IRQ handler, Call HAL handler
+| USART1 global interrupt                 | 8                | Generate IRQ handler, Call HAL handler
+| SPI1 global interrupt                   | 8                | Generate IRQ handler, Call HAL handler
+| Ethernet global interrupt               | 8                | Generate IRQ handler, Call HAL handler
 
 ### Connectivity Peripherals Configuration
 
-| Peripheral   | Mode / Settings                                                                                                    | IRQ | DMA | Note
-|:-------------|:-------------------------------------------------------------------------------------------------------------------|:----|:----|:----
-| ETH          | RMII, Do Not Generate Initialization Function Call                                                                 | yes | no  | Ethernet LAN8742A
-| SPI6         | Full-Duplex Master, Hardware NSS Signal=off, Do Not Generate Initialization Function Call                          | yes | no  | Arduino UNO R3 connector (CN7)
-| USART3       | Asynchronous, Hardware Flow Control=off, Baud Rate: 115200 Bits/s, Word Length: 8 Bits, Parity: None, Stop Bits: 1 | no  | no  | ST-LINK Virtual COM port
-| LPUART1      | Asynchronous, Hardware Flow Control=off, Do Not Generate Initialization Function Call                              | yes | no  | Arduino UNO R3 connector (CN10)
+| Peripheral   | Mode / Settings                                                                                                    | IRQ | DMA                                              | Note
+|:-------------|:-------------------------------------------------------------------------------------------------------------------|:----|:---------------------------------------- --------|:----
+| ETH          | RMII, Do Not Generate Initialization Function Call                                                                 | yes | no                                               | Ethernet LAN8742A
+| SPI1         | Full-Duplex Master, Hardware NSS Signal=off, Do Not Generate Initialization Function Call                          | yes | SPI1_RX = DMA1 Stream 2, SPI1_TX = DMA1 Stream 3 | Arduino UNO R3 connector (CN7)
+| USART3       | Asynchronous, Hardware Flow Control=off, Baud Rate: 115200 Bits/s, Word Length: 8 Bits, Parity: None, Stop Bits: 1 | no  | no                                               | ST-LINK Virtual COM port
+| USART1       | Asynchronous, Hardware Flow Control=off                                                                            | yes | no                                               | Arduino UNO R3 connector (CN10)
 
-**STDIO** is routed to ST-LINK Virtual COM port (USART1)
+**STDIO** is routed to ST-LINK Virtual COM port (USART3)
 
 ### CMSIS-Driver mapping
 
@@ -112,8 +114,8 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 |:-------------|:----------
 | ETH_MAC0     | ETH
 | ETH_PHY0     | LAN8742A (external)
-| SPI6         | SPI6
-| USART9       | LPUART1
+| SPI1         | SPI1
+| USART1       | USART1
 
 | CMSIS-Driver VIO  | Physical board hardware
 |:------------------|:-----------------------
