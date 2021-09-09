@@ -43,7 +43,7 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 
 | Clock                   | Setting
 |:------------------------|:----------------------------------------
-| LSE                     |  32 kHz
+| HSE                     |   8 MHz
 | HCLK                    | 400 MHz
 | FCLK                    | 400 MHz
 | APB1                    | 200 MHz

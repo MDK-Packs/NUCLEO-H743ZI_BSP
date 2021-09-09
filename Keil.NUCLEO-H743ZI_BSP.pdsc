@@ -7,6 +7,10 @@
   <repository type="git">https://github.com/MDK-Packs/NUCLEO-H743ZI_BSP.git</repository>
 
   <releases>
+    <release version="1.0.0-dev3">
+      Platform example update:
+      - Correct README.md
+    </release>
     <release version="1.0.0-dev2">
       Projects examples update:
       - update to latest packs (STM32H7xx_DFP_V2.8.0)
