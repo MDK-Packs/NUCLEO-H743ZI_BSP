@@ -7,27 +7,15 @@
   <repository type="git">https://github.com/MDK-Packs/NUCLEO-H743ZI_BSP.git</repository>
 
   <releases>
-    <release version="1.0.0-dev3">
-      Platform example update:
-      - Correct README.md
-    </release>
-    <release version="1.0.0-dev2">
-      Projects examples update:
-      - update to latest packs (STM32H7xx_DFP_V2.8.0)
-      - change clock source to EXTERNAL LSE CLK
-      - Platform example:
-      -- correct layer annotation
-      -- change SPI driver (to SPI1 with DMA)
-      -- change USART driver (to USART1)
-      -- change RAM memory area (to AXI-SRAM D1)
-    </release>
-    <release version="1.0.0-dev1">
-      Projects examples update:
-      - override default HAL_InitTick function
-      - Platform example: Correct board revision
-    </release>
-    <release version="1.0.0-dev0">
-      Initial development version.
+    <release version="1.0.0-rc0">
+      Board description and documentation for NUCLEO-H743ZI
+      Synchronized with STM32CubeH7 Firmware Package version V1.9.0
+      Drivers:
+      - Board Drivers and Config files
+      - CMSIS-Driver VIO
+      Example projects:
+      - CMSIS-RTOS2 Blinky (verify the basic tool setup)
+      - CMSIS-RTOS2 Platform (configure the board hardware)
     </release>
   </releases>
 
