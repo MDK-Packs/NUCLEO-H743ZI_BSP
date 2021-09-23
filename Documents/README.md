@@ -16,7 +16,7 @@ The STM32 Nucleo-144 board comes with the STM32 comprehensive free software libr
 
 This board support pack contains a CMSIS-Driver for the [VIO](https://arm-software.github.io/CMSIS_5/develop/Driver/html/group__vio__interface__gr.html) interface. This is a virtual I/O abstraction for peripherals that are typically used in example projects. The **Blinky** example uses this interface to create a blinking light with the USER LED mounted on the board that can be controlled by the **Button USER**.
 
-Virtual Resource  | Variable       | Physical Resource on NUCLEO-L552ZE-Q           |
+Virtual Resource  | Variable       | Physical Resource on NUCLEO-H743ZI             |
 :-----------------|:---------------|:-----------------------------------------------|
 vioBUTTON0        | vioSignalIn.0  | GPIO C.13: Button USER                         |
 vioLED0           | vioSignalOut.0 | GPIO B.14: LD3 RED                             |
