@@ -5,7 +5,8 @@
  * @date     8. July 2021
  ******************************************************************************/
 /*
- * Copyright (c) 2021 Arm Limited (or its affiliates). All rights reserved.
+ * Copyright (c) 2021 Arm Limited (or its affiliates).
+ * All rights reserved.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -106,7 +107,7 @@ void vioInit (void) {
 #endif
 }
 
-// Print formated string to test terminal.
+// Print formatted string to test terminal.
 int32_t vioPrint (uint32_t level, const char *format, ...) {
   va_list args;
   int32_t ret;

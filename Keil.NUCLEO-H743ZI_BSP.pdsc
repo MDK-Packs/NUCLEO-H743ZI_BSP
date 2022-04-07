@@ -7,8 +7,19 @@
   <repository type="git">https://github.com/MDK-Packs/NUCLEO-H743ZI_BSP.git</repository>
 
   <releases>
-    <release version="1.0.1-dev0">
-      Update Platform example (blocking stdin_getchar in stdio retarget)
+    <release version="2.0.0-rc0">
+      Synchronize with Keil:STM32H7xx_DFP.3.0.0
+      Drivers:
+      - CMSIS-Driver VIO:
+      -- Change driver location
+      Example projects:
+      - Migrate to new STM32CubeMX workflow concept
+      - Update Dynamic Memory size to default value
+      - Added MPU configuration
+      - Update linker scatter file
+      - Platform:
+      -- Added define DATA_IN_D2_SRAM
+      -- Update blocking stdin_getchar in stdio retarget
     </release>
     <release version="1.0.0" date="2021-09-13">
       Board description and documentation for NUCLEO-H743ZI
@@ -32,7 +43,7 @@
 
   <requirements>
     <packages>
-      <package vendor="Keil" name="STM32H7xx_DFP" version="2.8.0-0"/>
+      <package vendor="Keil" name="STM32H7xx_DFP" version="3.0.0"/>
     </packages>
   </requirements>
 
@@ -80,7 +91,7 @@
         #define RTE_VIO_NUCLEO_H743ZI
       </RTE_Components_h>
       <files>
-        <file category="source" name="Drivers/Platform/vio_NUCLEO-H743ZI.c"/>
+        <file category="source" name="CMSIS/Driver/vio_NUCLEO-H743ZI.c"/>
       </files>
     </component>
   </components>
@@ -97,7 +108,7 @@
       <book category="overview"  name="https://www.st.com/resource/en/data_brief/nucleo-h743zi.pdf" title="Data brief" public="true"/>
       <book category="setup"     name="https://www.st.com/resource/en/user_manual/um1727-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf" title="Getting started" public="true"/>
       <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2407-stm32h7-nucleo144-boards-mb1364-stmicroelectronics.pdf" title="User Manual" public="true"/>
-      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1364-h743zi-c01_schematic.pdf"     title="Schematics" public="true"/>
+      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1364-h743zi-c01_schematic.pdf" title="Schematics" public="true"/>
       <book category="other"     name="Documents/README.md" title="Guide" public="true"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32H743ZITx"/> 
       <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32H743"/>
