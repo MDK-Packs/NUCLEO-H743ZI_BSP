@@ -7,6 +7,13 @@
   <repository type="git">https://github.com/MDK-Packs/NUCLEO-H743ZI_BSP.git</repository>
 
   <releases>
+    <release version="2.0.1-dev2">
+      Example projects:
+      - Update files generated with CubeMx
+      - Platform:
+      -- Remove MPU region for SDRAM (SDRAM is not available on this board)
+      -- Minor update to linker script (EventRecorder positioned with .bss.noinit section name)
+    </release>
     <release version="2.0.1-dev1">
       Drivers:
       - CMSIS-Driver VIO:
