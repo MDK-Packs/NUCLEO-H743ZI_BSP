@@ -8,6 +8,11 @@
   <license>LICENSE</license>
 
   <releases>
+    <release version="2.1.0-dev0">
+      Drivers:
+      - CMSIS-Driver VIO:
+      -- Update VIO to API 1.0.0
+    </release>
     <release version="2.0.1-dev3">
       Pack Description:
       - Add LICENSE file
@@ -106,7 +111,7 @@
     </bundle>
 
     <!-- VIO component for NUCLEO-H743ZI -->
-    <component Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant= "NUCLEO-H743ZI" Cversion="1.0.1" Capiversion="0.1.0"   condition="NUCLEO-H743ZI VIO">
+    <component Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant= "NUCLEO-H743ZI" Cversion="2.0.0" Capiversion="1.0.0"   condition="NUCLEO-H743ZI VIO">
       <description>Virtual I/O implementation for NUCLEO-H743ZI</description>
       <RTE_Components_h>
         #define RTE_VIO_BOARD
